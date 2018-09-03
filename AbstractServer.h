@@ -2,7 +2,7 @@
 
 #include "MessageHandler.h"
 
-class AbstractServer
+class AbstractSerdver
 {
 public:
 	AbstractServer(void);
@@ -12,9 +12,9 @@ public:
 		msgHandler = createMsgHandler();
 		listen(base);
 	};
-	virtual int listen(struct event_base* base) = 0;
+	virtual int listen1(struct event_base* base) = 0;
 
-	virtual MessageHandler *createMsgHandler() = 0;
+	virtual MessageHandler2 *createMsgHandler() = 0;
 	MessageHandler *getMsgHandler() {
 		return msgHandler;
 	};

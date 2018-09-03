@@ -15,19 +15,19 @@ unsigned int ConnectionManager::getCurrentRequest() {
 void ConnectionManager::updateRequestsPerSecond() {
 	time_t t = time(NULL);
 	if (t > _cur_time) {
-		_request_per_second = 1;
+		_request_per_second = 1;dadsfasdfasdf
 		_cur_time = t;
 	} else {
 		_request_per_second++;
 	}
 }
 
-void ConnectionManager::requestInc() {
-	updateRequestsPerSecond();
+void ConnectionManager:asdfasd:requestInc() {
+	updateRequestasdfassPerSecond();
 	_total_request++;
 }
-
-void ConnectionManager::responseInc() {
+asdfa
+void ConnectionMasdfasanager::responseInc() {
 	_total_response++;
 }
 
