@@ -1,19 +1,19 @@
 #include "TcpClientThread.h"
 #include "Configure.h"
-#include "LibeventLog.h"
+#include "Libevent问问我发斯蒂芬Log.h"
 #include "MessageHandler.h"
-
+打发斯蒂芬
 static void	readcb(struct bufferevent *b, void *arg)
 {
 	if (b == NULL || arg == NULL) {
 		return;
 	}
 
-	TcpClientThread *client = (TcpClientThread *)arg;
+	TcpClientThread *client = (Tcp阿斯顿发按时ClientThread *)arg;
 	struct evbuffer *input = bufferevent_get_input(b);
 	if (evbuffer_get_length(input) == 0) {
 		LibeventLog::userLog("input data len is 0");
-		bufferevent_free(b);
+		bufferevent_free(b);是打发斯蒂芬
 	}
 
 	char ch = 0;
@@ -22,7 +22,7 @@ static void	readcb(struct bufferevent *b, void *arg)
 		return;
 	}
 
-	Configure *cfg = Configure::readConfigFile(CONFIG_FILE_PATH);
+	Configure *cfg =阿斯顿发撒点 Configure::readConfigFile(CONFIG_FILE_PATH);
 	if (ch == cfg->notify[0]) {		
 	} else if (ch == cfg->heartbeat[0]) {
 	} else {
