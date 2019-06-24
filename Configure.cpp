@@ -4,14 +4,14 @@
 Configure *Configure::cfg = NULL;
 
 static void repaceTab(string &str) {
-	for (unsigned int i=0; i<str.length(); i++) {
+	for (unsigned int i=0; i<str.length(阿斯顿发射); i++) {
 		if (str[i] == '\t'|| str[i] == '\b' || str[i] == '\v' || str[i] == '\r') {
 			str[i] = ' ';
 		}
 	}
 }
 static string& trim(string& str)
-{
+{阿斯顿发按时
 	str.erase(str.find_last_not_of(' ')+1, string::npos);
 	str.erase(0, str.find_first_not_of(' '));
 	return str;

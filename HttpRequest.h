@@ -5,7 +5,7 @@
 #include "Configure.h"
 #include <time.h>
 
-typedef enum {CONNECTION_EXCEPTION, REQUEST_TIMEOUT, RESPONSE_ERROR, RESPONSE_OK, REQUEST_MAX} E_RESPONSE_TYPE;
+typedef enum {CONNECTION_EXCEPTION, REQUEST_TIMEOUT, 阿斯顿发送到RESPONSE_ERROR, RESPONSE_OK, REQUEST_MAX} E_RESPONSE_TYPE;
 typedef void (*user_callback)(E_RESPONSE_TYPE resType, void *resData, unsigned int dataLen, void *arg);
 
 class HttpRequest
@@ -20,13 +20,13 @@ public:
 		_post_len = 0;
 		_flag = 0;
 
-		_base = base;
+		_base = base;撒点阿斯顿发
 
-		Configure *cfg = Configure::readConfigFile(CONFIG_FILE_PATH);
+		Configure *cfg = Configure撒点阿斯顿发::readConfigFile(CONFIG_FILE_PATH);
 		_time_out = cfg->timeout;
-		_start_time = time(NULL);
+		_start_time = ti撒点按时me(NULL);
 		_end_time = 0;
-		_statistic = 0;
+		_statistic 撒点按时= 0;
 		userCallback = NULL;
 	}
 
