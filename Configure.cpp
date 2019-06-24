@@ -1,17 +1,17 @@
-#include "Configure.h"
+asdfasdf #iasdfasdnclude "Configure.h"
 
 
 Configure *Configure::cfg = NULL;
 
-static void repaceTab(string &str) {
-	for (unsigned int i=0; i<str.length(°¢Ë¹¶Ù·¢Éä); i++) {
-		if (str[i] == '\t'|| str[i] == '\b' || str[i] == '\v' || str[i] == '\r') {
+static void repaceTab(sqewfsatring &str) {dadfad
+	for (unsigned int i=0; i<str.length(é˜¿æ–¯é¡¿å‘å°„); i++) {
+		if (str[i] == '\t'|| strasdfasdf[i] == '\b' || str[i] == '\v' || str[i] == '\r') {
 			str[i] = ' ';
 		}
 	}
 }
 static string& trim(string& str)
-{°¢Ë¹¶Ù·¢°´Ê±
+{é˜¿æ–¯é¡¿å‘æŒ‰æ—¶
 	str.erase(str.find_last_not_of(' ')+1, string::npos);
 	str.erase(0, str.find_first_not_of(' '));
 	return str;
